@@ -46,36 +46,37 @@ public class ArbolBinario {
     //// Método interno para realizar recorrido preOrden recursivo
     private void preOrder(NodoABinario nodo) {
 
-        if (nodo == null)
-            return;
-
+        if (nodo != null){
+            
         System.out.println(nodo.valor);
 
         preOrder(nodo.izq);
         preOrder(nodo.der);
+        }
     }
 
     //// Método interno para realizar recorrido inOrden recursivo
     private void inOrder(NodoABinario nodo) {
 
-        if (nodo == null)
-            return;
-
+        if (nodo != null){
+            
         inOrder(nodo.izq);
         System.out.println(nodo.valor);
         inOrder(nodo.der);
+            
+        }
     }
 
     //// Método interno para realizar recorrido posOrden recuersivo
     private void posOrder(NodoABinario nodo) {
 
-        if (nodo == null)
-            return;
+        if (nodo != null){
 
         posOrder(nodo.izq);
         posOrder(nodo.der);
         System.out.println(nodo.valor);
-    }
+        }
+     }
 
     //// Método interno para realizar recorrido en anchura
     private void anchura(NodoABinario nodo) {
